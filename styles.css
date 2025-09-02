@@ -1,10 +1,13 @@
-header, footer, #info-text {
+header,
+footer,
+#info-text {
     text-align: center;
     padding: 2rem;
     margin: 0.5rem auto;
 }
 
-header, footer {
+header,
+footer {
     background-color: aquamarine;
 }
 
@@ -14,14 +17,37 @@ header, footer {
 }
 
 #game {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.2rem;
     background-color: black;
+    height: 50vh;
+    width: 50vh;
+    min-height: 16rem;
+    min-width: 16rem;
+    max-width: 95vw;
+    max-height: 95vw;
 }
 
 .square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 5rem;
     min-height: 5rem;
     background-color: aqua;
+    font-size: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.square:hover {
+    background-color: cadetblue;
+}
+
+#reset-button {
+    display: flex;
+    margin: 2rem auto;
 }
